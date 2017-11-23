@@ -1,0 +1,66 @@
+body, html{
+    background-color: #2980b9;
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;
+	background-image: url(/assets/sheep.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 52% 20%;
+	background-size: 100px;
+}
+.container{
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.register-form{
+    font-size: 16px;
+    left: 55%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+.regbutton{    
+    height: 50px;
+    width: 200px;
+    background-color:#52BBFF;
+    border-radius: 0px;
+    font-size: 18px;
+    color:white;
+    border: none !important;
+    margin-bottom: 5px;
+}
+.regbutton:hover{    
+    color: white;
+    cursor: pointer;
+}
+
+.regbutton:active{color: white;}
+.register-form label{
+    color: aliceblue;
+    cursor: default;
+}
+
+.register-form input{
+    margin-bottom: 5px;
+    width: 430px;
+    height: 40px;
+    border-radius: 0px;
+}
+.password{margin-bottom: 20px !important;}
+ 
+@media screen and (max-height: 330px) {
+  body, html {
+    background-position: 52% 2%;
+    background-size: 75px;
+  }
+}
+
+
