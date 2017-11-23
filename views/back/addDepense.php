@@ -10,11 +10,12 @@
 	<p>Cochez les utilisateurs qui vont payer</p>
 	<?php
 	foreach ($datas as $data):
-		$nameUser = htmlentities($data['name']);
+		$nameUser 	= htmlentities($data['name']);
+		$userID		= intval($data['id'])
 	?>
         <p>
-        	<input type="checkbox" name = "name[]" value=<?=$data['id'];?>>
-        	<input type="number" name="parts[<?=$data['id'];?>]">
+        	<input type="checkbox" name = "name[]" value=<?=$userID;?>>
+        	<input type="number" name="parts[<?=$userID;?>]">
         	<?php
         		echo $nameUser;
         	?>

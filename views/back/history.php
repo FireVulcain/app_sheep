@@ -15,9 +15,13 @@
                 <?php foreach ( $datas as $data ): ?>
                     <li>
                         <?php
-                           echo $data["name"]. ' -- '
-                           . 'Type : '. $data["title"]. ' -- Prix : '
-                           . $data["price"]. '€ -- ';
+                            $name  = htmlentities($data["name"]);
+                            $title = htmlentities($data["title"]);
+                            $price = intval($data["price"]);
+
+                           echo $name. ' -- '
+                           . 'Type : '. $title. ' -- Prix : '
+                           . $price. '€ -- ';
 
                            changeDate( $data["pay_date"] );
                         ?>
